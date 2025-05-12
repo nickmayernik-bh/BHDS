@@ -52,19 +52,6 @@ body:
     validations:
       required: false
   
-  - type: textarea
-    id: props
-    attributes:
-      label: Props
-      description: |
-        What props, slots, or other API features do you envision for this component?
-     value: |
-        - **propName** (required/optional): `type` defaults to `value` – description of the prop
-        - **propName** (required/optional): `type` defaults to `value` – description of the prop
-        - **propName** (required/optional): `type` defaults to `value` – description of the prop      
-    validations:
-      required: false
-
 
   - type: textarea
     id: content-guidelines
