@@ -7,11 +7,6 @@ assignees: ''
 
 ---
 
-name: New component
-description: Create a new component in Polaris
-title: "[New component]: "
-labels: ["Type: Enhancement :sparkles:", "Status: Proposal :thought_balloon:"]
-assignees: []
 body:
   - type: markdown
     attributes:
