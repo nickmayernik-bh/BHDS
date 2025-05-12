@@ -1,21 +1,19 @@
 name: New component proposal
+description: Propose a new component
 labels: ['Component', 'untriaged']
 body:
   - type: input
-    id: component_name
+    id: component-name
     attributes:
       label: Component name
-      description: What is the name of your proposed component?
-      
+      description: Provide the proposed component name.
   - type: textarea
     id: description
     attributes:
       label: Component description
-      description: Provide a brief, clear description of what this component is and what it does.
-      placeholder: A button is a clickable element used to trigger an action or event.
-    validations:
-      required: true
-
+      description: Provide a short, two sentence intro description.
+      value: |
+        {Component name} is used to {x}. People can use it to {x}.
   - type: textarea
     id: required-components
     attributes:
@@ -24,7 +22,27 @@ body:
         This section is only used if the component is a dependency of or depends on another component. 
         Include a link to the required component and a short explanation of how they interact.
       value: The {x} component must be {wrapped in/passed to} the {y} component.
-   
+  - type: textarea
+    id: component-example
+    attributes:
+      label: Component example
+      description: |
+        Provide an example of the way the component would be used.
+        Use an image if applicable and clearly differentiate examples from each other.
+      value: |
+        ### {Component name} with {example}
+        Use {component name} to let merchants {x}.
+
+        ![image-name](image-url)
+  - type: textarea
+    id: props
+    attributes:
+      label: Props
+      description: Provide props and their type declarations.
+      value: |
+        - **propName** (required/optional): `type` defaults to `value` – description of the prop
+        - **propName** (required/optional): `type` defaults to `value` – description of the prop
+        - **propName** (required/optional): `type` defaults to `value` – description of the prop
   - type: textarea
     id: best-practices
     attributes:
@@ -35,21 +53,6 @@ body:
 
         - {ux guideline}
         - {design best practice}
-
-  - type: textarea  
-    id: designs
-    attributes:
-      label: Designs
-      description: |
-        Please share any designs, mockups, or examples of the component. You can upload images directly or link to Figma files.
-        
-        If you don't have designs yet, describe how you envision the component looking.
-      placeholder: |
-        [Figma link] or [Description of visual appearance]
-    validations:
-      required: false
-  
-
   - type: textarea
     id: content-guidelines
     attributes:
@@ -63,9 +66,6 @@ body:
         | Do example | Don’t example |
         | ---------- | ------------- |
         | Do this    | Don’t do this |
-        validations:
-      required: false
-
   - type: textarea
     id: related-components
     attributes:
@@ -73,6 +73,3 @@ body:
       description: Provide components related to the proposed component.
       value: |
         - To {description for how related component works}, use the [{component name} component]
-        validations:
-      required: false
-      
