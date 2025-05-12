@@ -1,0 +1,14 @@
+name: Feature request
+description: Suggest an addition or improvement to BHDS or the documentation
+labels: ['Feature request', 'untriaged']
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a short summary of the feature.
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain the benefit of this feature.
