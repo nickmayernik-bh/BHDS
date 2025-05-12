@@ -1,0 +1,94 @@
+name: New component proposal
+about: 
+labels: ['Component', 'untriaged']
+body:
+  - type: input
+    id: component_name
+    attributes:
+      label: Component name
+      description: What is the name of your proposed component?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Component description
+      description: Provide a brief, clear description of what this component is and what it does.
+      placeholder: A button is a clickable element used to trigger an action or event.
+    validations:
+      required: true
+
+  - type: textarea
+    id: required-components
+    attributes:
+      label: Required components
+      description: |
+        This section is only used if the component is a dependency of or depends on another component. 
+        Include a link to the required component and a short explanation of how they interact.
+      value: The {x} component must be {wrapped in/passed to} the {y} component.
+   
+  - type: textarea
+    id: best-practices
+    attributes:
+      label: Best practices
+      description: Provide best practices for the proposed component.
+      value: |
+        The {component name} component should:
+
+        - {ux guideline}
+        - {design best practice}
+
+  - type: textarea  
+    id: designs
+    attributes:
+      label: Designs
+      description: |
+        Please share any designs, mockups, or examples of the component. You can upload images directly or link to Figma files.
+        
+        If you don't have designs yet, describe how you envision the component looking.
+      placeholder: |
+        [Figma link] or [Description of visual appearance]
+    validations:
+      required: false
+  
+  - type: textarea
+    id: props
+    attributes:
+      label: Props
+      description: |
+        What props, slots, or other API features do you envision for this component?
+     value: |
+        - **propName** (required/optional): `type` defaults to `value` – description of the prop
+        - **propName** (required/optional): `type` defaults to `value` – description of the prop
+        - **propName** (required/optional): `type` defaults to `value` – description of the prop      
+    validations:
+      required: false
+
+
+  - type: textarea
+    id: content-guidelines
+    attributes:
+      label: Content guidelines
+      description: Provide content guidelines for the proposed component.
+      value: |
+        The {component name} component should:
+
+        - {guideline}
+
+        | Do example | Don’t example |
+        | ---------- | ------------- |
+        | Do this    | Don’t do this |
+        validations:
+      required: false
+
+  - type: textarea
+    id: related-components
+    attributes:
+      label: Related components
+      description: Provide components related to the proposed component.
+      value: |
+        - To {description for how related component works}, use the [{component name} component]
+        validations:
+      required: false
+      
