@@ -1,5 +1,4 @@
 name: New component proposal
-about: 
 labels: ['Component', 'untriaged']
 body:
   - type: input
